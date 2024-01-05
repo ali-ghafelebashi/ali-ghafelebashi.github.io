@@ -1,0 +1,198 @@
+
+<!-- HEAD Start -->
+
+<head>
+  {% include force-https.html %}
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="{{site.description}}">
+  <meta name="author" content="{{site.author}}">
+  <meta name="keywords" content="{{site.keywords}}">
+  <link rel="canonical" href="{{page.url | replace:'index.html','' | prepend: site.baseurl}}">
+  <title> { Ali Ghafelebashi } </title>
+
+  <!-- Bootstrap Core CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+  <!-- Custom CSS -->
+  <link href="{{site.baseurl}}/css/grayscale.css" rel="stylesheet">
+  {% if page.section-type == "index" %}
+  <link href="{{site.baseurl}}/css/timeline.css" rel="stylesheet">
+  {% endif %}
+
+  <!-- Custom Fonts -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <link href="//fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+  <link href="//fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="{{site.baseurl}}/css/rrssb.css" />
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->
+  {% if site.favicon %}
+    <link rel="shortcut icon" type="image/x-icon" href="{{site.baseurl}}{{site.favicon}}">
+  {% endif %}
+
+  {% if page.url == "/404.html" | prepend: {{site.baseurl}} %}
+    <meta http-equiv="refresh" content="20; url={{site.baseurl}}/">
+  {% endif %}
+
+  {% include web-app.html %}
+
+  {% include color-browser.html %}
+
+  {% include syntax-highlight.html %}
+
+<!-- Button -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+  .collapsible {
+    background-color: #3d3d3d;
+    color: #00a7e5;
+    cursor: pointer;
+    padding: 15px;
+    width: 100%;
+    border: solid;
+    border-width: 1px;
+    border-radius: 5px;
+    text-align: left;
+    outline: none;
+    font-size: 20px;
+  }
+
+  .active, .collapsible:hover {
+    background-color: #555;
+  }
+
+  .content {
+    padding: 0 15px;
+    color: black;
+    text-align: justify;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color: #f1f1f1;
+    font-size: 18px;
+  }
+  /*https://ianrmedia.unl.edu/resources/rounded-corners-images*/
+  .rounded-corners {
+    border-radius: 30px;
+  }
+  </style>
+
+
+
+
+<!-- Photo slideshow -->
+<!-- 
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+/*body {
+  font-family: Arial;
+  margin: 0;
+}*/
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  vertical-align: middle;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+  width: 60%;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: blue;
+  font-weight: bold;
+  font-size: 10px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+/* Position the "prev button" to the left */
+.prev {
+  left: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/4 etc) */
+.numbertext {
+  color: blue;;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: black;
+  font-size: 10px;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* 4 columns side by side */
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+</style> -->
+</head>
+
+<!-- HEAD End -->

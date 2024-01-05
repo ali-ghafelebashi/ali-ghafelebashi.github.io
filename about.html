@@ -1,0 +1,247 @@
+---
+layout: null
+section-type: about
+title: About
+---
+## About
+
+<!-- https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_collapsible_animate -->
+<!-- https://betterprogramming.pub/link-css-and-js-files-with-html-file-f848d00b42e8 -->
+<html>
+<body>
+
+<p style="text-align: justify">
+My name is Ali Ghafelebashi. I am a  <b>final</b> year Ph.D. candidate in Industrial and Systems Engineering at the University of Southern California (USC). I have also earned a Master's degree in Computer Science from USC. I am honored to have Professor 
+<a href="https://sites.usc.edu/razaviyayn/" target="_blank">Meisam Razaviyayn</a> as my Ph.D. advisor.
+</p>
+<p style="text-align: justify">
+I work at the intersection of optimization, machine learning, and transportation where I design scalable and distributed optimizaiton models and build private machine learning models for transportation applications.
+</p>
+<p style="text-align: center">
+<a href="https://raw.githubusercontent.com/ghafeleb/ghafeleb.github.io/blob/main/cv/Ali_Ghafelebashi_Resume.pdf" target="_blank">CV</a> | 
+<a href="https://www.linkedin.com/in/ali-ghafelebashi/" target="_blank">LinkedIn</a> | 
+<a href="https://github.com/ghafeleb" target="_blank">GitHub</a> | 
+<a href="https://scholar.google.com/citations?user=buk9O0kAAAAJ&hl=en" target="_blank">Google Scholar</a>
+</p>
+
+<hr>
+
+<h3 style="text-align: left">
+    Work Experience
+</h3>
+
+
+<h4 style="text-align: left">
+    Machine Learning & Data Science Intern, Shipt 
+    <span style="float:right;">
+        June 2023-August 2023
+    </span>
+</h4>
+
+<p style="text-align: justify">&#x2022; Achieved <b>6%</b> shopper acquisition cost reduction by developing an optimization model (ILP) (OR-Tools, PuLP, SQL)</p>
+
+<p style="text-align: justify">&#x2022; Improved shopper retention prediction accuracy by <b>3%</b> by utilizing LightGBM and including more features</p>
+
+
+
+<h4 style="text-align: left">
+    Data Science (Full Stack) Intern, Shipt
+    <span style="float:right;">
+        May 2022-August 2022
+    </span>
+</h4>
+
+<p style="text-align: justify">&#x2022; Enhanced statistical power of delivery bundling experiment by <b>7%</b> by providing a simulation-based power estimation package (SQL, pandas, NumPy)</p>
+
+<p style="text-align: justify">&#x2022; Increased speed of treatment group selection by <b>12X</b> by designing optimization-based (MIQP) package (CVXPY, Git)</p>
+
+
+
+<h4 style="text-align: left">
+    Research Assistant, University of Southern California
+    <span style="float:right;">
+        August 2018-Present
+    </span>
+</h4>
+
+<h5 style="text-align: left">
+    Projects:
+</h5>
+
+<!-- text-align: center -->
+<button class="collapsible"><b>Congestion reduction via personalized incentives</b>, <br><font color="white">@ Journal: Transportation Research Part C (impact factor ~ 9.0), Accepted for publication, 2023</font><br><br><img src="img/crpi2.png" alt="Personalized Incentivization" width="600" class="rounded-corners">
+    <span style="float:right;font-size: 30px;">
+        &#11022;
+    </span>
+</button>
+<div class="content">
+  With rapid population growth and urban development, traffic congestion has become an inescapable issue, especially in large cities. Many congestion reduction strategies have been proposed in the past, ranging from roadway extension to transportation demand management. In particular, congestion pricing schemes have been used as negative reinforcements for traffic control. In this paper, we study an alternative approach of offering positive incentives to drivers to take different routes. More specifically, we propose an algorithm to reduce traffic congestion and improve routing efficiency via offering (personalized) incentives to drivers. We propose to exploit the wide accessibility of smart devices to communicate with drivers and develop an incentive offering mechanism using individuals’ preferences and aggregate traffic information. The incentives are offered after solving a large-scale optimization problem in order to minimize the total travel time (or minimize any cost function of the network such as total carbon emission). Since this massive-size optimization problem needs to be solved continually in the network, we developed a distributed computational approach. The proposed distributed algorithm is guaranteed to converge under a mild set of assumptions that are verified with real data. We evaluated the performance of our algorithm using traffic data from the Los Angeles area. Our experiments show congestion reduction of up to <b>5%</b> in arterial roads and highways.<br><br>A. Ghafelebashi, M. Razaviyayn, M. Dessouky<br><br><a href="https://www.sciencedirect.com/science/article/pii/S0968090X23001420">PDF</a> | <a href="https://www.sciencedirect.com/science/article/pii/S0968090X23001420">Code</a>
+</div>
+<button class="collapsible"><b>Private non-convex federated learning without a trusted server</b>, <br><font color="white">@ Conference: International Conference on Artificial Intelligence and Statistics (AISTATS) (acceptance rate ~ 29.2%), Accepted for publication, 2023</font><br><br><img src="img/isrl.png" alt="Private Federated Learning" width="600" class="rounded-corners">
+    <span style="float:right;font-size: 30px;">
+        &#11022;
+    </span>
+</button>
+<div class="content">
+  We study federated learning (FL) with non-convex loss functions and data from people who do not trust the server or other silos. In this setting, each silo (e.g. hospital) must protect the privacy of each person’s medical record), even if the server or other silos act as adversarial eavesdroppers. To that end, we consider inter-silo record-level (ISRL) differential privacy (DP), which requires silo i’s communications to satisfy record/item-level DP. We propose novel ISRL-DP algorithms for FL with heterogeneous (non-i.i.d.) silo data and two classes of Lipschitz continuous loss functions: First, we consider losses satisfying the Proximal Polyak-Lojasiewicz (PL) inequality, which is an extension of the classical PL condition to the constrained setting. In contrast to our result, prior works only considered unconstrained private optimization with Lipschitz PL loss, which rules out most interesting PL losses such as strongly convex problems and linear/logistic regression. Our algorithms nearly attain the optimal strongly convex, homogeneous (i.i.d.) rate for ISRL-DP FL without assuming convexity or i.i.d. data. Second, we give the first private algorithms for non-convex non-smooth loss functions. Our utility bounds even improve on the state-of-the-art bounds for smooth losses. We complement our upper bounds with lower bounds. Additionally, we provide shuffle DP (SDP) algorithms that improve over the state-of-the-art central DP algorithms under more practical trust assumptions. Numerical experiments show that our algorithm has better accuracy than baselines for most privacy levels. <br><br>A. Lowy, A. Ghafelebashi, M. Razaviyayn<br><br><a href="https://proceedings.mlr.press/v206/lowy23a/lowy23a.pdf">PDF</a> | <a href="https://github.com/ghafeleb/Private-NonConvex-Federated-Learning-Without-a-Trusted-Server">Code</a>
+</div>
+<button class="collapsible"><b>Incentive Systems for Fleets of New Mobility Services</b>, <br><font color="white">@ Journal: IEEE Transactions on Intelligent Transportation Systems (impact factor ~ 8.5), Under review, 2023</font><br><br><img src="img/isnms.png" alt="Organization Incentivization" width="600" class="rounded-corners">
+    <span style="float:right;font-size: 30px;">
+        &#11022;
+    </span>
+</button>
+<div class="content">
+   Traffic congestion has become an inevitable challenge in large cities due to population increases and expansion of urban areas. Various approaches are introduced to mitigate traffic issues, encompassing from expanding the road infrastructure to employing demand management. Congestion pricing and incentive schemes are extensively studied for traffic control in traditional networks where each driver is a network "player". In this setup, drivers' "selfish" behavior hinders the network from reaching a socially optimal state. In future mobility services, on the other hand, a large portion of drivers/vehicles may be controlled by a small number of companies/organizations. In such a system, offering incentives to organizations can potentially be much more effective in reducing traffic congestion rather than offering incentives directly to drivers. This paper studies the problem of offering incentives to organizations to change the behavior of their individual drivers (or individuals relying on the organization's services). We developed a model where incentives are offered to each organization based on the aggregated travel time loss across all drivers in that organization. Such an incentive offering mechanism requires solving a large-scale optimization problem to minimize the system-level travel time. We propose an efficient algorithm for solving this optimization problem. Numerous experiments on Los Angeles County traffic data reveal the ability of our method to reduce system-level travel time by up to <b>6.9%</b>. Moreover, our experiments demonstrate that incentivizing organizations can be up to 8 times more efficient than incentivizing individual drivers in terms of incentivization monetary cost. <br><br>A. Ghafelebashi, M. Razaviyayn, M. Dessouky<br><br><a href="https://openreview.net/pdf?id=9LsjnIjRF6">PDF</a> | <a href="https://icml.cc/media/PosterPDFs/ICML%202023/27747.png?t=1690347329.9851174">Poster</a>
+</div>
+<button class="collapsible"><b>A Unifying Framework to the Analysis of Interaction Methods using Synergy Functions</b>, <br><font color="white">@ ICML 3rd Workshop on Interpretable Machine Learning in Healthcare (IMLH), Accepted for publication, 2023</font><br><br><img src="img/protein_xai.png" alt="Interpretabale Machine Learning - Healthcare" width="600" class="rounded-corners">
+    <span style="float:right;font-size: 30px;">
+        &#11022;
+    </span>
+</button>
+<div class="content">
+  Deep learning is expected to revolutionize many sciences and particularly healthcare and medicine. However, deep neural networks are generally “black box,” which limits their applicability to mission-critical applications in health. Explaining such models would improve transparency and trust in AI-powered decision making and is necessary for understanding other practical needs such as robustness and fairness. A popular means of enhancing model transparency is to quantify how individual inputs contribute to model outputs (called attributions) and the magnitude of interactions between groups of inputs. A growing number of these methods import concepts and results from game theory to produce attributions and interactions. This work presents a unifying framework for game-theory-inspired attribution and k^th-order interaction methods. We show that, given modest assumptions, a unique full account of interactions between features, called synergies, is possible in the continuous input setting. We identify how various methods are characterized by their policy of distributing synergies. We establish that gradient-based methods are characterized by their actions on monomials, a type of synergy function, and introduce unique gradient-based methods. We show that the combination of various criteria uniquely defines the attribution/interaction methods. Thus, the community needs to identify goals and contexts when developing and employing attribution and interaction methods. Finally, experiments with Physicochemical Properties of Protein Tertiary Structure data indicate that the proposed method has favorable performance against the state-of-the-art approach. <br><br>D. Lundstrom, A. Ghafelebashi, M. Razaviyayn<br><br><a href="https://openreview.net/pdf?id=9LsjnIjRF6">PDF</a> | <a href="https://icml.cc/media/PosterPDFs/ICML%202023/27747.png?t=1690347329.9851174">Poster</a>
+</div>
+<button class="collapsible"><b>Efficient algorithms for estimating the parameters of mixed linear regression models</b>, <br><font color="white">@ arXiv 2021</font><br><br><img src="img/mixed_linear_regression.png" alt="Mixed Linear Regression" width="600" class="rounded-corners">
+    <span style="float:right;font-size: 30px;">
+        &#11022;
+    </span>
+</button>
+<div class="content">
+  Mixed linear regression (MLR) model is among the most exemplary statistical tools for modeling non-linear distributions using a mixture of linear models. When the additive noise in MLR model is Gaussian, Expectation-Maximization (EM) algorithm is a widely-used algorithm for maximum likelihood estimation of MLR parameters. However, when noise is non-Gaussian, the steps of EM algorithm may not have closed-form update rules, which makes EM algorithm impractical. In this work, we study the maximum likelihood estimation of the parameters of MLR model when the additive noise has non-Gaussian distribution. In particular, we consider the case that noise has Laplacian distribution and we first show that unlike the the Gaussian case, the resulting sub-problems of EM algorithm in this case does not have closed-form update rule, thus preventing us from using EM in this case. To overcome this issue, we propose a new algorithm based on combining the alternating direction method of multipliers (ADMM) with EM algorithm idea. Our numerical experiments show that our method outperforms the EM algorithm in statistical accuracy and computational time in non-Gaussian noise case. <br><br>B. Barazandeh, A. Ghafelebashi, M. Razaviyayn<br><br><a href="Efficient Algorithms for Estimating the Parameters of Mixed Linear Regression Models">PDF</a> 
+</div>
+
+
+<hr>
+
+
+<h3 style="text-align: left">
+    Honors & Awards
+</h3>
+
+<p style="text-align: justify">&#x2022; $5,000 ITS California (ITSCA) and California Transportation Foundation (CTF) Scholarship, 2023</p>
+
+<p style="text-align: justify">&#x2022; <a href="https://sites.google.com/usc.edu/eishub/three-minute-thesis/2023-3mt">USC Viterbi Three Minute Thesis (3MT) Director’s Award for Best Research Translation, 2023</a>, <a href="https://www.youtube.com/watch?v=_A3MKf7DB0s">VIDEO</a></p>
+
+<p style="text-align: justify">&#x2022; <b>Ranked 1</b> for a four-year sequence in Department of Industrial Engineering at Amirkabir University of Technology, 2015-2018</p>
+
+<p style="text-align: justify">&#x2022; Ph.D. fellowship by the University of Southern California Viterbi School of Engineering, 2018</p>
+
+<p style="text-align: justify">&#x2022; M.Sc. fellowship by Sharif University of Technology, 2018</p>
+
+<p style="text-align: justify">&#x2022; M.Sc. fellowship by Amirkabir University of Technology, 2018</p>
+
+
+<hr>
+
+
+<h3 style="text-align: left">
+    Selected Courses
+</h3>
+
+<p style="text-align: justify">&#x2022; CSCI 570: Analysis of Algorithms</p>
+
+<p style="text-align: justify">&#x2022; ISE 633: Large Scale Optimization and Machine Learning</p>
+
+<p style="text-align: justify">&#x2022; CSCI 567: Machine Learning</p>
+
+<p style="text-align: justify">&#x2022; CSCI 566: Deep Learning and Its Applications</p>
+
+<p style="text-align: justify">&#x2022; CSCI 561: Artificial Intelligence</p>
+
+<p style="text-align: justify">&#x2022; ISE 632: Network Flows and Combinatorial Optimization</p>
+
+<p style="text-align: justify">&#x2022; CSCI 585: Database Systems</p>
+
+<p style="text-align: justify">&#x2022; CSCI 572: Information Retrieval and Web Search Engines</p>
+
+
+<hr>
+
+<h3 style="text-align: left">
+    Volunteering
+</h3>
+
+
+<h4 style="text-align: left">
+    Mentorship
+    <span style="float:right;">
+        June 2023-August 2023
+    </span>
+</h4>
+
+<p style="text-align: justify">&#x2022; Mentoring Vikram Meyer in the USC Viterbi Summer Undergraduate Research Experience (SURE) program. SURE is an 8-week summer residential research program at the University of Southern California in Los Angeles. The program provides undergraduate students with the opportunity to work on cutting-edge research projects with academic-industry collaboration under the mentorship of Viterbi faculty and PhD students.</p>
+
+
+<hr>
+
+
+<h3 style="text-align: left">
+    Licenses & Certifications
+</h3>
+
+<p style="text-align: justify">&#x2022; <a href="license_certificate/OpenCV.png">Introduction to Deep Learning with OpenCV</a></p>
+
+<p style="text-align: justify">&#x2022; <a href="license_certificate/ML_Spark.png">Spark for Machine Learning & AI</a></p>
+
+<p style="text-align: justify">&#x2022; <a href="license_certificate/OOD.png">Programming Foundations: Object-Oriented Design</a></p>
+
+<p style="text-align: justify">&#x2022; <a href="license_certificate/Python_OOP.png">Python Object-Oriented Programming</a></p>
+
+
+<!-- https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_slideshow_gallery -->
+<!-- <h2 style="text-align:center">Gallery</h2>
+
+<div class="container">
+  <div class="mySlides">
+    <div class="numbertext">1 / 4</div>
+    <img src="img/gallery/3mt.jpg" style="width:100%" class="rounded-corners">
+	  <div class="caption-container">
+	    <p id="caption">USC Viterbi 3MT Director’s Award trophy, 2023</p>
+	  </div>
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">2 / 4</div>
+    <img src="img/gallery/icml2023.jpg" style="width:100%" class="rounded-corners">
+	  <div class="caption-container">
+	    <p id="caption">Poster presentation with Daneil, ICML IMLH Workshop 2023</p>
+	  </div>
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 4</div>
+    <img src="img/gallery/neurips2023lama.jpg" style="width:100%" class="rounded-corners">
+	  <div class="caption-container">
+	    <p id="caption">Lama (Llama!!) at Hugging Face event :), NeurIPS 2023</p>
+	  </div>
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">4 / 4</div>
+    <img src="img/gallery/yosemite.jpg" style="width:100%" class="rounded-corners">
+	  <div class="caption-container">
+	    <p id="caption">Yosemite National Park</p>
+	  </div>
+  </div>
+
+    
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+
+  <div class="row">
+    <div class="column">
+      <img class="demo cursor" src="img/gallery/3mt.jpg" style="width:100%" onclick="currentSlide(1)" alt="USC Viterbi 3MT Director’s Award trophy">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img/gallery/icml2023.jpg" style="width:100%" onclick="currentSlide(2)" alt="Poster presentation with Daneil, ICML IMLH Workshop 2023">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img/gallery/neurips2023lama.jpg" style="width:100%" onclick="currentSlide(3)" alt="Lama (Llama!!) at Hugging Face event :), NeurIPS 2023">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img/gallery/yosemite.jpg" style="width:100%" onclick="currentSlide(4)" alt="Yosemite National Park">
+    </div>
+  </div>
+</div> -->
+</body>
+</html>

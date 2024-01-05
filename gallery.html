@@ -1,0 +1,70 @@
+---
+layout: null
+section-type: gallery
+title: Gallery
+---
+<!-- ## Gallery -->
+
+<!-- https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_collapsible_animate -->
+<!-- https://betterprogramming.pub/link-css-and-js-files-with-html-file-f848d00b42e8 -->
+<html>
+<body>
+
+<!-- https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_slideshow_gallery -->
+<h2 style="text-align:center">Gallery</h2>
+
+<div class="container">
+  <div class="mySlides">
+    <div class="numbertext">1 / 4</div>
+    <img src="img/gallery/3mt.jpg" style="width:100%" class="rounded-corners">
+	  <div class="caption-container">
+	    <p id="caption">USC Viterbi 3MT Director’s Award trophy, 2023</p>
+	  </div>
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">2 / 4</div>
+    <img src="img/gallery/icml2023.jpg" style="width:100%" class="rounded-corners">
+	  <div class="caption-container">
+	    <p id="caption">Poster presentation with Daneil, ICML IMLH Workshop 2023</p>
+	  </div>
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 4</div>
+    <img src="img/gallery/neurips2023lama.jpg" style="width:100%" class="rounded-corners">
+	  <div class="caption-container">
+	    <p id="caption">Lama (Llama!!) at Hugging Face event :), NeurIPS 2023</p>
+	  </div>
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">4 / 4</div>
+    <img src="img/gallery/yosemite.jpg" style="width:100%" class="rounded-corners">
+	  <div class="caption-container">
+	    <p id="caption">Yosemite National Park</p>
+	  </div>
+  </div>
+
+    
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+
+  <div class="row">
+    <div class="column">
+      <img class="demo cursor" src="img/gallery/3mt.jpg" style="width:100%" onclick="currentSlide(1)" alt="USC Viterbi 3MT Director’s Award trophy">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img/gallery/icml2023.jpg" style="width:100%" onclick="currentSlide(2)" alt="Poster presentation with Daneil, ICML IMLH Workshop 2023">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img/gallery/neurips2023lama.jpg" style="width:100%" onclick="currentSlide(3)" alt="Lama (Llama!!) at Hugging Face event :), NeurIPS 2023">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img/gallery/yosemite.jpg" style="width:100%" onclick="currentSlide(4)" alt="Yosemite National Park">
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
